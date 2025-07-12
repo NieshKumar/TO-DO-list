@@ -1,0 +1,95 @@
+body
+{
+   position: relative;
+    display: flex;
+    /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+    background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.conatiner h1
+{
+    display: flex; 
+    justify-content: center;
+    color: #ededed;
+    font-size: 3rem;
+   background-image: linear-gradient( 135deg, #FAB2FF 10%, #1904E5 100%);
+   background-size: cover; 
+    background-clip: text; 
+   color:transparent;
+   animation: animate 10s linear infinite;
+}
+@keyframes animate
+{
+    to{
+        background-position-x: -200px;
+    }
+}
+.conatiner
+{
+    background-image: linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%);
+    
+    max-width: 500px;
+    width: 90%;
+    height: 900px;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1rem #ededed;
+    /* inset 2px 0 2rem #ededed; */
+    z-index: 1;
+    border-top: 2px solid indigo;
+    border-bottom: 2px solid indigo;
+}
+.input-container
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+#add-task
+{
+    background-color: #00abf0;
+    border-radius: 5px;
+    border: none;
+    
+}
+#add-task:hover{
+    background-color: rgb(4, 112, 155);
+    cursor: pointer;
+}
+#task-input
+{
+    border: none;
+    border-radius: 3px;
+    padding-left: 5px;
+    box-shadow: 2px 2px 1rem gray;
+}
+.task-item
+{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    justify-content: space-between;
+    background-color:#00abf0 ;
+    width: 250px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: #065776;
+    margin-bottom: 5px;
+    border-top: 1px solid indianred;
+    border-bottom:1px solid indianred ;
+}
+.delete-btn
+{
+    background-color:crimson;
+    border-radius: 3px;
+    color: #ededed;
+    cursor: pointer;
+}
+.task-text
+{
+    font-weight: 500;
+}
